@@ -4,6 +4,6 @@
     "next/typescript"
   ],
   "rules": {
-    "@typescript-eslint/explicit-module-boundary-types": "warn"
+    "@typescript-eslint/explicit-module-boundary-types": "error"
   }
 }
