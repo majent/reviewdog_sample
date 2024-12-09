@@ -6,8 +6,8 @@ on:
       - main
   pull_request:
     paths:
-      - "**/*.ts"
-      - "**/*.tsx"
+      - 'src/**/*.ts'
+      - 'src/**/*.tsx'
 
 jobs:
   reviewdog:
@@ -30,5 +30,5 @@ jobs:
         with:
           github_token: ${{ secrets.TOKEN }}
           reporter: github-pr-review
-          eslint_flags: "src/"
+          eslint_flags: '-c .eslintrc.reviewdog.json src/'
           fail_level: "info"
