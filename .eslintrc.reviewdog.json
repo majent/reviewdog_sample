@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript"
+  ],
+  "plugins": [
+    "custom-rules"
+  ],
+  "rules": {
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "custom-rules/no-console-log": "error",
+    "custom-rules/no-destructuring-context": "error"
+  }
+}
