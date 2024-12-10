@@ -1,4 +1,4 @@
-import { sum } from "@/utils/sum";
+import { sum } from "@/utils/calc";
 import { expect, test } from "vitest";
 
 test("adds 1 + 2 to equal 3", () => {
