@@ -3,7 +3,9 @@
     "next/core-web-vitals",
     "next/typescript"
   ],
-  "plugins": ["custom-rules"],
+  "plugins": [ 
+    "custom-rules"
+  ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "warn",
     "custom-rules/no-console-log": "warn",
