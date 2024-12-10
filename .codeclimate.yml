@@ -1,11 +1,9 @@
 version: "2"
-plugins: 
+plugins:
   eslint:
     enabled: true
-eslint:
-  enabled: true
-  config:
-    config: .eslintrc.json
-    extensions:
-    - .ts
-    - .tsx
+    config:
+      extensions:
+        - .ts
+        - .tsx
+      config: .eslintrc.json
