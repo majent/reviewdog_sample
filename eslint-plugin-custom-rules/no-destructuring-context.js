@@ -3,12 +3,12 @@ module.exports = {
     type: "problem",
     docs: {
       description:
-        "Prohibit destructuring of the second argument in files under src/schema/query/",
+        "Prohibit destructuring of context argument in files under src/schema/query/",
       recommended: false,
     },
     messages: {
       noDestructuringSecondArg:
-        "Destructuring of the second argument is prohibited in this function.",
+        "Destructuring of context argument is prohibited in this function.",
     },
     schema: [],
   },
@@ -22,40 +22,37 @@ module.exports = {
 
     return {
       FunctionDeclaration(node) {
-        const secondParam = node.params[1];
+        const param = node.params[2];
         if (
-          secondParam &&
-          (secondParam.type === "ObjectPattern" ||
-            secondParam.type === "ArrayPattern")
+          param &&
+          (param.type === "ObjectPattern" || param.type === "ArrayPattern")
         ) {
           context.report({
-            node: secondParam,
+            node: param,
             messageId: "noDestructuringSecondArg",
           });
         }
       },
       FunctionExpression(node) {
-        const secondParam = node.params[1];
+        const param = node.params[2];
         if (
-          secondParam &&
-          (secondParam.type === "ObjectPattern" ||
-            secondParam.type === "ArrayPattern")
+          param &&
+          (param.type === "ObjectPattern" || param.type === "ArrayPattern")
         ) {
           context.report({
-            node: secondParam,
+            node: param,
             messageId: "noDestructuringSecondArg",
           });
         }
       },
       ArrowFunctionExpression(node) {
-        const secondParam = node.params[1];
+        const param = node.params[2];
         if (
-          secondParam &&
-          (secondParam.type === "ObjectPattern" ||
-            secondParam.type === "ArrayPattern")
+          param &&
+          (param.type === "ObjectPattern" || param.type === "ArrayPattern")
         ) {
           context.report({
-            node: secondParam,
+            node: param,
             messageId: "noDestructuringSecondArg",
           });
         }

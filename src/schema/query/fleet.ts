@@ -15,6 +15,7 @@ type Context = {
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (
+  _: unknown,
   { id, organizationId }: Args,
   { organization_id }: Context
 ): Fleet => {
