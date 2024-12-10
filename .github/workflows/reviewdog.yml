@@ -11,8 +11,9 @@ on:
 
 jobs:
   reviewdog:
-    name: reviewdog
+    name: Reviewdog
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
