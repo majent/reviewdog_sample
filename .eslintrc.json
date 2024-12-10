@@ -1,8 +1,13 @@
 {
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
   "extends": [
     "next/core-web-vitals",
     "next/typescript"
   ],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2021,
     "sourceType": "module"
@@ -12,7 +17,6 @@
   ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "warn",
-    "custom-rules/no-console-log": "warn",
     "custom-rules/no-destructuring-context": "warn"
   }
 }

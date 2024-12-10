@@ -8,7 +8,6 @@
   ],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "error",
-    "custom-rules/no-console-log": "error",
     "custom-rules/no-destructuring-context": "error"
   }
 }
