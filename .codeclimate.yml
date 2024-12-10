@@ -1,0 +1,10 @@
+plugins: 
+  eslint:
+    enabled: true
+eslint:
+  enabled: true
+  config:
+    config: .eslintrc.json
+    extensions:
+    - .ts
+    - .tsx
