@@ -3,6 +3,10 @@
     "next/core-web-vitals",
     "next/typescript"
   ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
   "plugins": [ 
     "custom-rules"
   ],
