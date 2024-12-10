@@ -1,9 +1,6 @@
+import { sum } from "@/utils/sum";
 import Image from "next/image";
 import { JSX } from "react";
-
-export function sum(a: number, b: number) {
-  return a + b;
-}
 
 export default function Home(): JSX.Element {
   const num = 1;

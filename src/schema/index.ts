@@ -1,4 +1,4 @@
-import fleet from "./query/fleet";
+import fleet from "@/schema/query/fleet";
 
 export const resolvers = {
   Query: {
