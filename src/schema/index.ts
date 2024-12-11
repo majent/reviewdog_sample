@@ -23,7 +23,7 @@ export const resolvers = {
       if (!contextOrganizationId) {
         throw new Error("Unauthorized");
       }
-      return { id, name: "羽田空港送迎", organizationId: organizationId };
+      return { id, name: "羽田空港", organizationId: organizationId };
     },
   },
 };
